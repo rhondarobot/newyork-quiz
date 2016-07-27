@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>New York Quiz</title>
-
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -12,21 +13,73 @@
 		</header>
 	</div>
 	
+	<div class="questionCount">
+		<p>Question #</p>
+		<p>1/6</p>
+	</div>
+	<div class="correctCount">
+		<p>Number of Correct Answers</p>
+		<p>  /6</p>
 	<div class="questions">
-		<ul class="quiz questions">
 
-				<li class="question1">What is the capitol of New York?</li>
-	
-				<li class="question2">What are the 5 burroughs of New York?</li>
-	
-				<li class="question3">What is New York frequently known as?</li>
-	
-				<li class="question4">How long is the NYC subway track?</li>
-
-				<li class="question5">What was New York City originally called?</li>
-	
-				<li class="question6">New York City was the nation's capital from 1789-1790.</li>
-		</ul>
+				<ul class="question1">What is the capital of New York?</ul>
+					<li class="one1">Albany</li>
+					<li class="two1">New York City</li>
+					<li class="three1">Manhattan</li>
+					<li class="four1">Buffalo</li>
+					<li class="five1">Brooklyn</li>
+						<form id="question1">
+							<input type="submit" value="Submit"/>
+						</form>		
+				<ul class="question2">What are the 5 burroughs of New York?</ul>
+					<li class="one2">Manhattan, the Bronx, Brooklyn, Albany, Staten Island</li>
+					<li class="two2">Manhattan, Ellis Island, Brooklyn, Queens, Staten Island</li>
+					<li class="three2">Albany, the Bronx, Brooklyn, Queens, Staten Island</li>
+					<li class="four2">Manhattan, SoHo, Brooklyn, Queens, Albany</li>
+					<li class="five2">Manhattan, the Bronx, Brooklyn, Queens, Staten Island</li>
+						<form id="question2">
+							<input type="submit" value="Submit"/>
+						</form>	
+				<ul class="question3">What is New York frequently known as?</ul>
+					<li class="one3">The Subway State</li>
+					<li class="two3">The Windy City</li>
+					<li class="three3">Land of Enchantment</li>
+					<li class="four3">Melting Pot</li>
+					<li class="five3">Sunshine State</li>
+						<form id="question3">
+							<input type="submit" value="Submit"/>
+						</form>	
+				<ul class="question4">When the Subway first opened in NYC, how much did the first fare cost?</ul>
+					<li class="one4">5 cents</li>
+					<li class="two4">2 cents </li>
+					<li class="three4">25 cents</li>
+					<li class="four4">10 cents</li>
+					<li class="five4">6 cents</li>
+						<form id="question4">
+							<input type="submit" value="Submit"/>
+						</form>	
+				<ul class="question5">What was New York City originally called?</ul>
+					<li class="one5">New England</li>
+					<li class="two5">New Amsterdam</li>
+					<li class="three5">The Big Apple</li>
+					<li class="four5">New America</li>
+					<li class="five5">Land of Liberty</li>
+						<form id="question5">
+							<input type="submit" value="Submit"/>
+						</form>	
+				<ul class="question6">New York City was the nation's capital from 1789-1790.</ul>
+					<li class="one6">True</li>
+					<li class="two6">False</li>
+						<form id="question6">
+							<input type="submit" value="Submit"/>
+						</form>	
+	</div>
+	<div class="correctAnswer">
+		<p>Correct Answer</p>
+		<p class="multipleChoice"></p>
+	</div>
+	<div class="newYorkPics">
+		<img src="http://imgur.com/58zIPpI">
 	</div>
 
 	<div class="displayFeedback">
@@ -34,5 +87,7 @@
 			
 
 	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
