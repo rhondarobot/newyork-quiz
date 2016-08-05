@@ -38,10 +38,15 @@ $(document).ready(function() {
  	$('#one').text(quiz[i].answers[1]);
  	$('#two').text(quiz[i].answers[2]);
  	$('#three').text(quiz[i].answers[3]);
+ 	$('#four').text(quiz[i].answers[4]);
+ 	$('#five').text(quiz[i].answers[5]);
  	$('#start').remove();
  	$('#.choices').show('slow');
  	$('#next').show('slow');
- });
+   });
+});
+
+
 
 
 
