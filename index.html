@@ -5,12 +5,14 @@
 	<title>New York Quiz</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 </head>
+
 <body>
 	<div class="wrapper">
 		<div id="quiz">
 			<div id="questions">This is a quiz about New York. Click <font color="green">Start</font> below to test your knowledge
-				<input type="button" value="start">
+			<div id="start">Start</div>
 			</div>
 			<div name="answersFrame" id="answersFrame" class="choices">
 				<input type="radio" name="answers" class="choices" value=0>
@@ -32,9 +34,19 @@
 				<p id="three" class="pickone"></p>	
 			<br/>
 			</div>	
-			<input type="button" value="next">
+				<div name="answersFrame" id="answersFrame" class="choices">
+				<input type="radio" name="answers" class="choices" value=4>
+				<p id="four" class="pickone"></p>	
+			<br/>
 			</div>
-			<div id="table">
+				<div name="answersFrame" id="answersFrame" class="choices">
+				<input type="radio" name="answers" class="choices" value=5>
+				<p id="five" class="pickone"></p>	
+			<br/>
+			</div>
+			<div id="next">Next</div>
+			</div>
+			<!--<div id="table">
 				<div id="score"></div>
 				<table id="results">
 					<thead>
@@ -110,14 +122,13 @@
 								<p class="correctAnswer" value=5>			
 								</p>
 							</td>
-						</tr>
+						</tr> -->
 
 
 
 							
 		
-	<!--looking into the following for the rest of the design-->
-		<div class="questionCount">
+	<!--looking into the following for the rest of the design		<div class="questionCount">
 			<p>Question #</p>
 			<p>1/6</p>
 		</div>
@@ -138,8 +149,9 @@
 			
 
 		</div>
-	</div>	
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="js/app.js"></script>
+	</div>	-->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="js/app.js"></script>	
 </body>
-</html>
+
+</html> 
