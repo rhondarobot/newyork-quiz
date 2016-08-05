@@ -55,7 +55,8 @@ $(document).ready(function() {
 			$('p[class="userAnswer"][value=' + i + ']').text(answerString);
 		var correctAnswer = quiz[i].correctAnswer;
 			$('p[class="correctAnswer"][value=' + i + ']').text(quiz[i].answers[correctAnswer]);
-		if(answer ===quiz[i].correctAnswer) {
+		if(answer == quiz[i].correctAnswer) {
+			$('tr[class="row"][name=' + i + ']').css('background','#34c38d');
 			score++;
 		} else {
 			$('tr[class="row"][name=' + i + ']').css('background','#ff4949');
@@ -80,7 +81,7 @@ $(document).ready(function() {
 		}
 		if(i>5) {
 			$('#quiz').remove();
-			$('#score').text("You have completed the quiz. Your score is " + score);
+			$('#score').text("You have completed the quiz. Your score is " + score +'/6');
 			$('#results').fadeIn('fast');
 		}
 	});
