@@ -1,0 +1,48 @@
+#score {
+    margin-top: 2%;
+}
+
+#results{
+    margin-top: 2%;
+}
+
+table, th, td {
+    border: 3.5px solid white;
+    text-align: center;
+}
+
+.column1 {
+    width: 12em;  
+}
+
+.userAnswer {
+    width: 10em;    
+}
+
+.correctAnswer {
+    width: 10em;
+}
+
+.pickone {
+    display: inline;
+    position: relative;
+    margin: 2px;
+}
+
+#next {
+    position: absolute;
+    height: 20px;
+    width: 65px;
+    background: #6a1024;
+    color: #ffffff;
+    text-align: center;
+    padding: 4px;
+    font-size: 1em;
+    border-radius: 10px;
+    display: none;
+    margin-top: 2%
+}
+
+.choices {
+    margin-top: 1%;
+}
