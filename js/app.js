@@ -28,7 +28,8 @@ var i = 0;
 var score = 0;
 
 $(document).ready(function() {
- $('.choices').hide();	
+ $('.choices').hide();
+ $('#next').hide();	
  $('#results').hide();
  $('#start').on('click',function(){
  	$('#questions').text(quiz[i].question);
@@ -60,6 +61,7 @@ $(document).ready(function() {
 			return undefined;
 		}
 		i++;
+		$('#next').show('slow');
 
 		if(i<5) {
 			$('.choices').css('display','none');
