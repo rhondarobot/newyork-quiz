@@ -1,3 +1,4 @@
+/*---questions and multiple answers for quiz---*/
 var quiz = [{
 		question: "Question 1: When was New York founded",
 		answers: [1776, 1864, 1624, 1704, 1927],
@@ -24,6 +25,7 @@ var quiz = [{
 		correctAnswer: 1
 	}]
 
+/*---activating start button and displaying quiz page by page---*/
 var i = 0;
 var score = 0;
 
@@ -43,6 +45,7 @@ $(document).ready(function() {
  	$('#next').show('slow');
    });
 
+/*---activating next button, choices and validating responses---*/
 $(document).ready(function() {
 	$(document).on('click', '#next',function() {
 		var answer = $('input[name="answers"]:checked').val();
@@ -62,6 +65,7 @@ $(document).ready(function() {
 		}
 		i++;
 
+/*---quiz will continue to display until all 5 questions have been displayed---*/
 		if(i<5) {
 			$('.choices').css('display','none');
 			$('#questions').text(quiz[i].question);
@@ -70,10 +74,10 @@ $(document).ready(function() {
 			$('#two').text(quiz[i].answers[2]);
 			$('#three').text(quiz[i].answers[3]);
 			$('#four').text(quiz[i].answers[4]);
-			$('#five').text(quiz[i].answers[5]);
 			$('.choices').show('slow');
 			$('input[name="answers"]').prop('checked',false);
 		}
+/*---quiz score and answers will be revealed after user answers the final question---*/		
 		if(i>4) {
 			$('#quiz').remove();
 			$('#score').text("Congratulations! You have completed the quiz. You scored " + score +'/5 correctly: ' + score/5 * 100 +'%');
