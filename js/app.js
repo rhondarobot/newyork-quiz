@@ -28,8 +28,7 @@ var i = 0;
 var score = 0;
 
 $(document).ready(function() {
- $('.choices').hide();
- $('#next').hide();	
+ $('.choices').hide();	
  $('#results').hide();
  $('#start').on('click',function(){
  	$('#questions').text(quiz[i].question);
