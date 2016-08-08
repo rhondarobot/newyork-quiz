@@ -31,8 +31,8 @@ table, th, td {
 
 #start {
     position: absolute;
-    height: 20px;
-    width: 65px;
+    height: 40px;
+    width: 75px;
     background: #c0a9ec;
     color: #ffffff;
     text-align: center;
@@ -49,8 +49,8 @@ table, th, td {
 
 #next {
     position: absolute;
-    height: 20px;
-    width: 65px;
+    height: 40px;
+    width: 75px;
     background: #c0a9ec;
     color: #ffffff;
     text-align: center;

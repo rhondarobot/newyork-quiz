@@ -61,7 +61,6 @@ $(document).ready(function() {
 			return undefined;
 		}
 		i++;
-		$('#next').show('slow');
 
 		if(i<5) {
 			$('.choices').css('display','none');
