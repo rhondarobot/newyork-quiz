@@ -1,3 +1,7 @@
+body {
+        background-color: lavender;
+    }
+
 .wrapper {
 	margin-left: 25%;
 }
@@ -73,3 +77,24 @@ table, th, td {
 .choices {
     margin-top: 1%;
 }
+
+@media only screen and (max-width: 500px) {
+    #questions {
+        text-align: center;
+    }
+    #start {
+        margin-left: -2%;
+        font-size: .5em;
+        margin-top: 4%;
+    }
+    .newYorkPics {
+        width: 25%;
+        margin-left: 25%;
+    }
+    .wrapper {
+        margin-left: 0%;
+    }
+    body {
+        background-color: lightpink;
+    }
+  }
