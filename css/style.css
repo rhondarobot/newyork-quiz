@@ -132,6 +132,9 @@ img {
         margin: auto;
         font-size: 3.5vw;
     }
+    #answersFrame {
+        font-size: 3.5vh;
+    }
   }
 @media only screen and (min-width: 409px) and (max-width: 859px) {
     #questions {
