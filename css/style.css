@@ -44,8 +44,8 @@ table, th, td {
 }
 
 #start {
-    height: 40px;
-    width: 75px;
+    height: 2em;
+    width: 4em;
     background: #c0a9ec;
     color: #ffffff;
     text-align: center;
